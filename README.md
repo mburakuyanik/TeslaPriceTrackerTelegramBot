@@ -128,15 +128,10 @@ MIT
 
 ## 👨‍💻 Geliştiren
 
-- [Your Name](https://github.com/KULLANICI_ADINIZ)
-
-## 🙏 Teşekkürler
-
-Bu projenin geliştirilmesinde yardımcı olan herkese teşekkürler!
+- [M. Burak UYANIK](https://github.com/mburakuyanik)
 
 ---
 
 <p align="center">
   <b>🔍 Tesla Model Y Fiyat Takip Botu ile uygun fiyatlı Tesla'nızı kaçırmayın!</b><br>
-  Herhangi bir sorun veya öneri için <a href="https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip/issues">GitHub Issues</a> kullanabilirsiniz.
 </p> 
