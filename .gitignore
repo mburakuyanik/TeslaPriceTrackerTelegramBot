@@ -1,0 +1,28 @@
+# Çalışma zamanı dosyaları
+.env
+node_modules/
+package-lock.json
+
+# Üretilen sonuçlar
+api-response.json
+inventory-results.json
+inventory-summary.json
+previous-results.json
+notification-*.json
+tesla-page.png
+error-*.json
+error-*.png
+error-screenshot.png
+email-error.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db 

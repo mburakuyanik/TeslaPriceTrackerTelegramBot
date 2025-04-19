@@ -1,0 +1,40 @@
+{
+  "name": "tesla-fiyat-takip",
+  "version": "1.0.0",
+  "description": "Tesla Model Y fiyatlarını takip eden ve bildirimleri gönderen bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js 1"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "node-notifier": "^10.0.1",
+    "nodemailer": "^6.10.1",
+    "puppeteer": "^24.6.1"
+  },
+  "keywords": [
+    "tesla",
+    "model-y",
+    "price-tracker",
+    "telegram",
+    "notification",
+    "bot",
+    "turkish"
+  ],
+  "author": "Burak Uyanık",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip/issues"
+  },
+  "homepage": "https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
