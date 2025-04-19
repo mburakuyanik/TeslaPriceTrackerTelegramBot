@@ -46,8 +46,8 @@ Telegram ile gelen bir bildirim örneği:
 
 1. Repoyu klonlayın:
 ```bash
-git clone https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip.git
-cd tesla-fiyat-takip
+git clone https://github.com/mburakuyanik/TeslaPriceTrackerTelegramBot.git
+cd TeslaPriceTrackerTelegramBot
 ```
 
 2. Gerekli paketleri yükleyin:
