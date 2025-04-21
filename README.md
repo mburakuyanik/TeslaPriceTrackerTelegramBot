@@ -1,9 +1,5 @@
 # Tesla Model Y Price Tracker Bot
 
-<p align="center">
-  <img src="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico" width="80" alt="Tesla Logo">
-</p>
-
 ## Overview
 
 **Tesla Model Y Price Tracker Bot** monitors Tesla's official inventory page at regular intervals to identify new vehicles listed below a specified price threshold. When a matching vehicle is found, you are instantly notified via Telegram or email.
