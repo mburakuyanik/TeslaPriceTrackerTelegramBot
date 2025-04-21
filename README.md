@@ -1,119 +1,113 @@
-# 🚗 Tesla Model Y Fiyat Takip Botu
+# Tesla Model Y Price Tracker Bot
 
 <p align="center">
-  <img src="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico" width="100" alt="Tesla Logo">
+  <img src="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico" width="80" alt="Tesla Logo">
 </p>
 
-Tesla Model Y araçlarının envanter durumunu otomatik olarak izleyen ve belirtilen fiyat limitinin altındaki yeni araçlar eklendiğinde size anında bildirim gönderen bir bot.
+## Overview
 
-## 🌟 Özellikler
+**Tesla Model Y Price Tracker Bot** monitors Tesla's official inventory page at regular intervals to identify new vehicles listed below a specified price threshold. When a matching vehicle is found, you are instantly notified via Telegram or email.
 
-- ✅ Belirlediğiniz aralıklarla otomatik kontrol (dakika, saat veya gün olarak ayarlanabilir)
-- ✅ İstediğiniz fiyat limiti altındaki araçlar hakkında anında bildirim
-- ✅ **Telegram** bildirimleri (en güvenilir yöntem)
-- ✅ E-posta bildirimleri (Gmail, Outlook, Yandex)
-- ✅ Detaylı araç bilgileri (model, trim, renk, menzil, hızlanma, fiyat)
-- ✅ İndirimli araçların tespit edilmesi ve bildirilmesi
-- ✅ Envanter verilerini JSON formatında kaydetme
-- ✅ İstatistiksel özet raporları
+> 🚀 A smart and reliable solution to never miss a great deal.
 
-## 🖼️ Örnek Bildirim
+---
 
-Telegram ile gelen bir bildirim örneği:
+## 🔧 Key Features
+
+- 🔁 Automated checks at configurable intervals (minutes, hours, days)
+- 💸 Detects new listings below your set price limit
+- 📬 Real-time notifications via **Telegram and Email**
+- 📊 Detailed vehicle information (model, trim, range, acceleration, price, discount)
+- 🏷️ Detects discounted vehicles and highlights savings
+- 💾 Saves inventory data in JSON format
+- 📈 Provides summarized reports
+
+---
+
+## 🔔 Sample Notification
 
 ```
-🚗 YENİ TESLA MODEL Y FIRSATLARI 🚗
+🚗 NEW TESLA MODEL Y DEALS 🚗
 
-🔥 3 adet 4.000.000 TL altı yeni araç bulundu!
+🔥 3 new vehicles found under 4,000,000 TL!
 
-1. Performance Dört Çeker
-💰 Fiyat: 3.356.160 ₺
-🏷️ İndirim: 193.640 ₺ (Orijinal: 3.727.949 ₺)
-🎨 Renk: Midnight Cherry Red (Vişne)
-🔋 Menzil: 514 kilometre
-⚡ 0-100 Hızlanma: 3.7 saniye
-🔗 [Satın Al](https://www.tesla.com/tr_TR/my/order/...)
-
-...
+1. Performance AWD
+💰 Price: ₺3,356,160
+🏷️ Discount: ₺193,640 (Original: ₺3,727,949)
+🎨 Color: Midnight Cherry Red
+🔋 Range: 514 km
+⚡ 0-100 km/h: 3.7 sec
+🔗 Purchase: [Link](https://www.tesla.com/tr_TR/my/order/...)
 ```
 
-## 📋 Gereksinimler
+---
 
-- Node.js 14+
-- npm
+## 🚀 Setup Instructions
 
-## ⚙️ Kurulum
+### 1. Clone the repository
 
-1. Repoyu klonlayın:
 ```bash
 git clone https://github.com/mburakuyanik/TeslaPriceTrackerTelegramBot.git
 cd TeslaPriceTrackerTelegramBot
 ```
 
-2. Gerekli paketleri yükleyin:
+### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
-3. Yapılandırma dosyasını oluşturun:
+### 3. Create your environment config
+
 ```bash
 cp .env.example .env
 ```
 
-4. `.env` dosyasını düzenleyerek bildirim ayarlarınızı yapın.
+### 4. Edit `.env` file
 
-## 🔔 Bildirim Ayarları
+Configure your Telegram or email settings, price limit, and check interval:
 
-### Telegram Bildirimleri (Önerilen)
+```env
+TELEGRAM_BOT_TOKEN=xxx
+TELEGRAM_CHAT_ID=xxx
 
-1. Telegram'da [@BotFather](https://t.me/botfather) ile konuşmaya başlayın
-2. `/newbot` komutunu gönderin ve adımları takip edin
-3. Bot token'ını `.env` dosyasına ekleyin:
-```
-TELEGRAM_BOT_TOKEN=botunuzun_token_değeri
-```
-4. Botunuza bir mesaj gönderin
-5. Chat ID'nizi almak için: https://api.telegram.org/botTOKEN_DEĞERI/getUpdates
-6. Chat ID'yi `.env` dosyasına ekleyin:
-```
-TELEGRAM_CHAT_ID=chat_id_değeri
-```
-
-### Fiyat ve Kontrol Sıklığı Ayarları
-
-`.env` dosyasında:
-```
-# Fiyat limiti (TL)
 PRICE_LIMIT=4000000
-
-# Kontrol aralığı (dakika cinsinden)
 CHECK_INTERVAL=30
 ```
 
-## 🚀 Kullanım
+---
 
-Bot'u başlatmak için:
+## 📤 Notification Methods
+
+### ✅ Telegram (Recommended)
+
+1. Start a chat with [@BotFather](https://t.me/botfather) to create your bot
+2. Copy the token and paste it into your `.env` file
+3. To retrieve your chat ID, send a message to your bot and use the `getUpdates` API
+
+### 📧 Email
+
+- Supports Gmail, Outlook, and Yandex via SMTP. Add SMTP credentials in your `.env` file.
+
+---
+
+## 🛠️ Running the Bot
 
 ```bash
 node index.js
 ```
 
-Farklı bir kontrol aralığıyla çalıştırmak için:
+> Optional: Set a custom check interval (in minutes)
 
 ```bash
-# 15 dakikada bir kontrol için:
-node index.js 15
+node index.js 15  # Check every 15 minutes
 ```
 
-## 🛠️ Arka Planda Sürekli Çalıştırma
+---
 
-### Windows 
+## ♾️ Run in the Background
 
-Windows Görev Zamanlayıcısı kullanarak her bilgisayar başlangıcında otomatik başlatabilirsiniz.
-
-### Linux/macOS
-
-PM2 ile sürekli çalıştırmak için:
+### Linux/macOS (Using PM2)
 
 ```bash
 npm install -g pm2
@@ -122,16 +116,26 @@ pm2 startup
 pm2 save
 ```
 
-## 📄 Lisans
+### Windows
 
-MIT
-
-## 👨‍💻 Geliştiren
-
-- [M. Burak UYANIK](https://github.com/mburakuyanik)
+- Use Task Scheduler to launch the bot on system startup.
 
 ---
 
+## 📄 License
+
+Distributed under the MIT License.
+
+---
+
+## 👨‍💻 Developer
+
+**M. Burak UYANIK**  
+🔗 [GitHub](https://github.com/mburakuyanik)
+
 <p align="center">
-  <b>🔍 Tesla Model Y Fiyat Takip Botu ile uygun fiyatlı Tesla'nızı kaçırmayın!</b><br>
-</p> 
+  <strong>💡 Don’t miss the best Tesla Model Y deals — stay ahead with this bot!</strong>
+</p>
+```
+
+Let me know if you want a bilingual version or if you'd like a badge-enhanced version for GitHub flair!
