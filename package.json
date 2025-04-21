@@ -28,12 +28,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip.git"
+    "url": "git+https://github.com/mburakuyanik/TeslaPriceTrackerTelegramBot"
   },
   "bugs": {
-    "url": "https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip/issues"
+    "url": "https://github.com/mburakuyanik/TeslaPriceTrackerTelegramBot/issues"
   },
-  "homepage": "https://github.com/KULLANICI_ADINIZ/tesla-fiyat-takip#readme",
+  "homepage": "https://github.com/mburakuyanik/TeslaPriceTrackerTelegramBot#readme",
   "engines": {
     "node": ">=14.0.0"
   }
