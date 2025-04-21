@@ -133,9 +133,4 @@ Distributed under the MIT License.
 **M. Burak UYANIK**  
 🔗 [GitHub](https://github.com/mburakuyanik)
 
-<p align="center">
-  <strong>💡 Don’t miss the best Tesla Model Y deals — stay ahead with this bot!</strong>
-</p>
 ```
-
-Let me know if you want a bilingual version or if you'd like a badge-enhanced version for GitHub flair!
